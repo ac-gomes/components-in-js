@@ -1,4 +1,3 @@
-
 const className = {
   classNameCard: 'card',
   classNameTitleBar: 'card-title',
