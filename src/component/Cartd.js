@@ -1,7 +1,6 @@
-
 import Tools from "../helper/tools.js"
 
-const Card = (app, className, cardTitle, color, content, result, component) => {
+const Card = (app, className, cardTitle, color, fn, component) => {
   let {classNameCard, classNameTitleBar, classNameCodeArea, fResult} = className
   let newCard = Tools.createElement("div")
   let titleBar = Tools.createElement("div")
@@ -16,9 +15,9 @@ const Card = (app, className, cardTitle, color, content, result, component) => {
   Tools.elementContent(titleBar,`<h1>${cardTitle}</h1>`)
 
   codeArea.className = classNameCodeArea
-  Tools.elementContent(codeArea, content)
+  Tools.elementContent(codeArea, fn)
   functionResult.className = fResult
-  Tools.elementContent(functionResult, `Result: ${result}`)
+  Tools.elementContent(functionResult, `Result: ${fn()}`)
 
   if(component){
     titleBar.appendChild(component)

@@ -1,6 +1,6 @@
 
 import arrays from "../data/array.js"
-import objetos from "../data/objeto.js"
+import objetos from "../data/object.js"
 
 const Push = () => {
   let numbers = [0,1,2,3]
@@ -28,13 +28,12 @@ const Filter = () => {
   return filtered
 };
 
-const ForEach = () => {
-  let myArray = [0,1,true,false,'a']
-  myArray.forEach( item => {
-    if (typeof item == 'number'){
-     return item += item
-    }
-  })
+const Find = () => {
+  let myArray = [0,1,2,3]
+  const found = myArray.find(
+    item => item > 1
+  )
+  return found
 };
 
 const Map = () => {
@@ -47,12 +46,43 @@ const Map = () => {
   return newArray
 };
 
+const IndexOf = () => {
+  let myArray = [0,1,true,false,'a']
+  const index = myArray.indexOf(true)
+  return index
+};
+
+const Every = () => {
+  let myArray = [0,1,2,3]
+  const trueOrFalse = myArray.every(
+    item => item > 2
+  )
+  return trueOrFalse
+};
+
+const Some = () => {
+  let myArray = [0,1,2,3]
+  const trueOrFalse = myArray.some(
+    item => item > 2)
+  return trueOrFalse
+};
+
+const Includes = () => {
+  let array = ['Tio','Pai','Mãe']
+  const trueOrFalse = array.includes('Pai')
+  return trueOrFalse
+};
+
 const Functions = {
   Push,
   Pop,
   Shift,
   Filter,
-  ForEach,
+  Find,
   Map,
+  IndexOf,
+  Every,
+  Includes,
+  Some,
 }
 export default Functions;

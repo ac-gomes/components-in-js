@@ -4,8 +4,8 @@ import Card from "../component/Cartd.js"
 import Helper from "../helper/index.js"
 import Functions from "./functions.js"
 import Icon from "../component/Icon.js"
-let {className, colors} = Helper
 
+let {className, colors} = Helper
 
 document.body.onload = Card(
   app,
@@ -13,8 +13,7 @@ document.body.onload = Card(
   'Array - push()',
   colors.SeaGreen,
   Functions.Push,
-  Functions.Push(),
-  Icon('i',className.icon,colors.White)
+  Icon('i', className.icon, colors.White,Functions.Push),
 );
 
 Card(
@@ -23,8 +22,7 @@ Card(
   'Array - pop()',
   colors.BlueViolet,
   Functions.Pop,
-  Functions.Pop(),
-  Icon('i',className.icon,colors.White)
+  Icon('i', className.icon, colors.White,Functions.Pop)
 )
 
 Card(
@@ -33,7 +31,7 @@ Card(
   'Array - shift()',
   colors.Orange,
   Functions.Shift,
-  Functions.Shift()
+  Icon('i', className.icon, colors.LightGray,Functions.Shift)
 )
 
 Card(
@@ -42,7 +40,7 @@ Card(
   'Array - filter()',
   colors.Salmon,
   Functions.Filter,
-  Functions.Filter()
+  Icon('i', className.icon, colors.LightGray,Functions.Filter)
 )
 
 Card(
@@ -51,19 +49,54 @@ Card(
   'Array - Map()',
   colors.DarkCyan,
   Functions.Map,
-  Functions.Map()
+  Icon('i', className.icon, colors.LightGray,Functions.Map)
 )
-function getAllFunctions(){
-  var allfunctions=[];
-    for ( var i in window) {
-  if((typeof window[i]).toString()=="function"){
-      allfunctions.push(window[i].name);
-    }
- }
- return allfunctions;
-}
-let a = getAllFunctions()
-console.log(a)
+
+Card(
+  app,
+  className,
+  'Array - find()',
+  colors.Brown,
+  Functions.Find,
+  Icon('i', className.icon, colors.LightGray,Functions.Find)
+)
+
+Card(
+  app,
+  className,
+  'Array - indexOf()',
+  colors.Blue,
+  Functions.IndexOf,
+  Icon('i', className.icon, colors.LightGray,Functions.IndexOf)
+)
+
+Card(
+  app,
+  className,
+  'Array - every()',
+  colors.Gold,
+  Functions.Every,
+  Icon('i', className.icon, colors.SeaGreen,Functions.Every)
+)
+
+Card(
+  app,
+  className,
+  'Array - includes()',
+  colors.Red,
+  Functions.Includes,
+  Icon('i', className.icon, colors.Gold,Functions.Includes)
+)
+
+Card(
+  app,
+  className,
+  'Array - some()',
+  colors.BlueViolet,
+  Functions.Some,
+  Icon('i', className.icon, colors.White,Functions.Some)
+)
+
 // console.log(app.childNodes)
 // console.log(app.childNodes)
 
