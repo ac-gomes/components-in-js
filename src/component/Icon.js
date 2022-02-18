@@ -8,7 +8,7 @@ const Icon = (label, className, color, fn) => {
   if(fn) {
     functionDoc.href = getFunctionDoc(fn.name)
     functionDoc.target="_blank"
-    functionDoc.title = "Docuemtatio"
+    functionDoc.title = "Documentation"
     functionDoc.rel="noopener noreferrer"
   }
   Tools.elementContent(functionDoc, label)

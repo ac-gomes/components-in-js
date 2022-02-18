@@ -83,7 +83,7 @@ Card(
   app,
   className,
   'Array - includes()',
-  colors.Red,
+  colors.LightSeaGreen,
   Functions.Includes,
   Icon('i', className.icon, colors.Gold,Functions.Includes)
 )
@@ -92,11 +92,31 @@ Card(
   app,
   className,
   'Array - some()',
-  colors.BlueViolet,
+  colors.Indigo,
   Functions.Some,
   Icon('i', className.icon, colors.White,Functions.Some)
 )
 
+const initialize = ({
+  aapName,
+  className,
+  cardTitle,
+  color,
+  cardContet,
+  icon
+}) => {
+  Card (
+    aapName,
+    className,
+    cardTitle,
+    color,
+    cardContet,
+    icon,
+  );
+
+//'Array - push()',Functions.Push, Icon('i', className.icon, colors.White,Functions.Push),
+
+}
 // console.log(app.childNodes)
 // console.log(app.childNodes)
 

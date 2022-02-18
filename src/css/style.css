@@ -8,16 +8,12 @@ ul, ol, li {
 }
 
 body {
-  display: flex;
   height: 100vh;
-  align-items: flex-start;
-  justify-content: center;
   font-family:sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
   background-color: #444 ;
   color: #ffff;
-  text-align: center;
   background: #485563;
   background: -webkit-linear-gradient(to right, #29323c, #485563);
   background: linear-gradient(to right, #29323c, #485563);
@@ -25,18 +21,17 @@ body {
 
 h1, h2 {
   font-weight: 300;
+  text-align: center;
+  margin: 10px 0px;
 }
 
 .app {
-  width: 70vw;
-  margin-top: 20px;
+  width: 85vw;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  padding: 0 0 10px 0;
-
+  justify-content: center;
+  gap: 20px;
 }
 .card {
   display: flex;
@@ -46,13 +41,13 @@ h1, h2 {
   height: 265px;
   width: 400px;
   background-color: #ffff;
-  margin-top: 15px;
   border: 5px solid #9932CC;
   border-radius: 5px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
 }
+
 .card-title {
   display: flex;
   flex-wrap: nowrap;
@@ -89,8 +84,7 @@ h1, h2 {
 
 }
 .about {
-  align-content: center;
-  display:grid;
+  text-align: center;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -102,6 +96,7 @@ h1, h2 {
 
 .about:hover {
   opacity:0.7 !important;
+
 }
 a {
   color: inherit;
