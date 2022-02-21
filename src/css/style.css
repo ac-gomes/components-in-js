@@ -74,14 +74,17 @@ h1, h2 {
   text-align: justify;
 }
 .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 95%;
+  height: 25px;
   background-color: #8c8c9c4f;
   color: #212F3D;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
   font-size: 15px;
-
 }
 .about {
   text-align: center;

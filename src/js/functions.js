@@ -1,7 +1,3 @@
-
-import arrays from "../data/array.js"
-import objetos from "../data/object.js"
-
 const Push = () => {
   let numbers = [0,1,2,3]
   numbers.push(4,5)
